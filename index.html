@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your PWA Title</title>
+    <title>SklTracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Your app content goes here -->
+    <div class="container">
+        <h1>SklTracker</h1>
+        <div id="classInfo"></div>
+        <button onclick="addClass()">Add Class</button>
+        <button onclick="addHomework()">Add Homework</button>
+        <button onclick="addAssessment()">Add Assessment</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/path/to/service-worker.js')
-            .then((registration) => {
-                console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch((error) => {
-                console.error('Service Worker registration failed:', error);
-            });
-    }
-</script>
